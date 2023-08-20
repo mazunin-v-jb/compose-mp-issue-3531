@@ -4,6 +4,9 @@ import MainView
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material.MaterialTheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContent {
             MainView()
         }
+    }
+}
+
+@Preview
+@Composable
+fun MainViewPreview() {
+    MaterialTheme {
+        MainView()
     }
 }
